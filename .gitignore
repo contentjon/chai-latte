@@ -1,0 +1,6 @@
+*jar
+/lib/
+/classes/
+/target/
+.lein-deps-sum
+/node_modules/
