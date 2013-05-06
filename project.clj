@@ -10,5 +10,5 @@
      :id "unit",
      :compiler
      {:pretty-print  true,
-      :output-to     "test/unit_spec.js",
+      :output-to     "test/unit.js",
       :optimizations :simple}}]})
