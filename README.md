@@ -22,7 +22,7 @@ At the time of writing a [regression](https://github.com/chaijs/chai/pull/140) i
 is not yet published to the Node packages. This means that you will have to replace
 the JavaScript files in
 
-   node_modules/chai/lib
+    node_modules/chai/lib
 
 in your project, with the corresponding files from a github checkout
 of [Chai](https://github.com/chaijs/chai).
@@ -36,7 +36,7 @@ To write an assertion construct a form of the following shape:
 (ns mylib.test.core
  (require [latte.chai :refer (expect)]))
 ...
-(expect <target> <test-expression> <expectation>)
+(expect <actual> <test-expression> <expectation>)
 ```
 
 valid forms would be:
