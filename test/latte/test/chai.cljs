@@ -37,6 +37,13 @@
         :to.throw
         js/Error)))
 
+  (it "disallows parameters on properties" []
+    (expect
+      (fn []
+        (expect true :to.be.ok "foo"))
+      :to.throw
+      js/Error))
+
   (it "can check complex clojure types for equality" []
 
     (expect [:a :b :c]  :to.equal [:a :b :c])

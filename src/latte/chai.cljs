@@ -29,9 +29,17 @@
 
 (defn expect [obj expr & args]
   (if-let [result (find-meth obj (str/split (name expr) #"\."))]
-    (when (vector? result)
+    (if (vector? result)
       (let [[meth this] result]
-        (.apply meth this (into-array args))))
+        (.apply meth this (into-array args)))
+      (when (not-empty args)
+        (-> (str "Arguments: "
+                 (clj->js args)
+                 " supplied to property expression "
+                 expr
+                 " where none where expected")
+            (js/Error.)
+            (throw))))
     (throw (js/Error. "Could not find test method"))))
 
 ;; this additional method is needed as the include and contain
