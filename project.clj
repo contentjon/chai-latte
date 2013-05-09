@@ -9,7 +9,7 @@
   :min-lein-version "2.0.0"
   :plugins          [[lein-cljsbuild "0.3.0"]]
   :dependencies     [[org.clojure/clojure "1.4.0"]]
-  :profiles         {:dev {:dependencies [mocha-latte "0.1.0"]}}
+  :profiles         {:dev {:dependencies [[mocha-latte "0.1.0"]]}}
   :cljsbuild
   {:builds
    [{:source-paths ["src" "test"],
