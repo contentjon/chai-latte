@@ -42,6 +42,11 @@
             (throw))))
     (throw (js/Error. "Could not find test method"))))
 
+(defn plugin [s]
+  (when-let [module (js/require s)]
+    (.use chai module)
+    module))
+
 ;; this additional method is needed as the include and contain
 ;; methods can not be overwritten in chai.
 
