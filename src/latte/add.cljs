@@ -1,6 +1,11 @@
-(ns latte.add)
+(ns latte.add
+  (:require [kit.core :as kit]))
 
-(def chai       (js/require "chai"))
+(def chai
+  (if (kit/module-system?)
+    (js/require "chai")
+    js/chai))
+
 (def assertions (aget chai "Assertion"))
 
 (defn method [k & args]

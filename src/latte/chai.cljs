@@ -1,10 +1,15 @@
 (ns latte.chai
   (:require [clojure.set     :as set]
             [clojure.string  :as str]
+            [kit.core        :as kit]
             [latte.add       :as add]
             [latte.overwrite :as overwrite]))
 
-(def chai    (js/require "chai"))
+(def chai
+  (if (kit/module-system?)
+    (js/require "chai")
+    js/chai))
+
 (def expect* (aget chai "expect"))
 
 (defn- assertion? [x]
