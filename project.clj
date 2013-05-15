@@ -1,4 +1,4 @@
-(defproject chai-latte "0.2.0-SNAPSHOT"
+(defproject chai-latte "0.3.0-SNAPSHOT"
   :description      "A ClojureScript port of the chai assertion library"
   :url              "https://github.com/contentjon/chai-latte"
   :license          {:name         "MIT"
