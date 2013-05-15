@@ -11,6 +11,8 @@ for an introduction.
 [chai-latte "0.2.0"]
 ```
 
+Read the [Changelog](CHANGELOG.md) for a list of changes in the current version.
+
 Installation
 ------------
 
@@ -26,6 +28,14 @@ the JavaScript files in
 
 in your project, with the corresponding files from a github checkout
 of [Chai](https://github.com/chaijs/chai).
+
+### Browser Support
+
+When testing front end code in a browser or in a headless setup, you need to provide
+a browser build of [chai.js](http://chaijs.com/chai.js) and any plugins to Chai that
+you may be using, which are usually included via a script tag.
+
+This library will try to autodetect if the environment is a browser or nodejs.
 
 Examples
 --------
