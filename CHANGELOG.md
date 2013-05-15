@@ -5,6 +5,7 @@ Changelog
 ---------------
 
 * Added browser support
+* Moved Clojure dependency to dev profile
 
 0.1.2
 ---------------
