@@ -68,7 +68,7 @@ no parameters are allowed.
 (epxect true :to.be.ok)
 ```
 
-State of Implementation
+State of the Implementation
 -----------------------
 
 Currently only the [expect API](http://chaijs.com/api/bdd/) of Chai is wrapped.
