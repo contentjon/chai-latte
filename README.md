@@ -16,7 +16,7 @@ Read the [Changelog](CHANGELOG.md) for a list of changes in the current version.
 Installation
 ------------
 
-When running on NodeJS, simply install the Chai via npm.
+When running on NodeJS, simply install Chai via npm.
 
     npm install chai
 
