@@ -1,10 +1,15 @@
 (ns latte.chai
   (:require [clojure.set     :as set]
             [clojure.string  :as str]
+            [kit.core        :as kit]
             [latte.add       :as add]
             [latte.overwrite :as overwrite]))
 
-(def chai    (js/require "chai"))
+(def chai
+  (if (kit/module-system?)
+    (js/require "chai")
+    js/chai))
+
 (def expect* (aget chai "expect"))
 
 (defn- assertion? [x]
@@ -41,6 +46,11 @@
             (js/Error.)
             (throw))))
     (throw (js/Error. "Could not find test method"))))
+
+(defn plugin [s]
+  (when-let [module (js/require s)]
+    (.use chai module)
+    module))
 
 ;; this additional method is needed as the include and contain
 ;; methods can not be overwritten in chai.

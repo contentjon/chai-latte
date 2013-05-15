@@ -8,13 +8,15 @@ Familiarity with the Chai library itself is assume. Refer to the [Chai guide](ht
 for an introduction.
 
 ```clojure
-[chai-latte "0.1.2"]
+[chai-latte "0.2.0"]
 ```
+
+Read the [Changelog](CHANGELOG.md) for a list of changes in the current version.
 
 Installation
 ------------
 
-When running on NodeJS, simply install the Chai via npm.
+When running on NodeJS, simply install Chai via npm.
 
     npm install chai
 
@@ -26,6 +28,14 @@ the JavaScript files in
 
 in your project, with the corresponding files from a github checkout
 of [Chai](https://github.com/chaijs/chai).
+
+### Browser Support
+
+When testing front end code in a browser or in a headless setup, you need to provide
+a browser build of [chai.js](http://chaijs.com/chai.js) and any plugins to Chai that
+you may be using, which are usually included via a script tag.
+
+This library will try to autodetect if the environment is a browser or nodejs.
 
 Examples
 --------
@@ -58,7 +68,7 @@ no parameters are allowed.
 (epxect true :to.be.ok)
 ```
 
-State of Implementation
+State of the Implementation
 -----------------------
 
 Currently only the [expect API](http://chaijs.com/api/bdd/) of Chai is wrapped.
