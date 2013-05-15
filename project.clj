@@ -1,4 +1,4 @@
-(defproject chai-latte "0.2.0-SNAPSHOT"
+(defproject chai-latte "0.2.0"
   :description      "A ClojureScript port of the chai assertion library"
   :url              "https://github.com/contentjon/chai-latte"
   :license          {:name         "MIT"
@@ -9,7 +9,7 @@
   :min-lein-version "2.0.0"
   :plugins          [[lein-cljsbuild "0.3.0"]]
   :dependencies     [[org.clojure/clojure "1.4.0"]
-                     [contentjon/kit.cljs "0.1.0-SNAPSHOT"]]
+                     [contentjon/kit.cljs "0.1.0"]]
   :profiles         {:dev {:dependencies [[mocha-latte "0.1.0"]]}}
   :cljsbuild
   {:builds

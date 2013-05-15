@@ -8,7 +8,7 @@ Familiarity with the Chai library itself is assume. Refer to the [Chai guide](ht
 for an introduction.
 
 ```clojure
-[chai-latte "0.2.0-SNAPSHOT"]
+[chai-latte "0.2.0"]
 ```
 
 Installation
