@@ -20,15 +20,6 @@ When running on NodeJS, simply install Chai via npm.
 
     npm install chai
 
-At the time of writing a [regression](https://github.com/chaijs/chai/pull/140) in Chai
-is not yet published to the Node packages. This means that you will have to replace
-the JavaScript files in
-
-    node_modules/chai/lib
-
-in your project, with the corresponding files from a github checkout
-of [Chai](https://github.com/chaijs/chai).
-
 ### Browser Support
 
 When testing front end code in a browser or in a headless setup, you need to provide
