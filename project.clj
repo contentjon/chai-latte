@@ -8,7 +8,7 @@
 
   :min-lein-version "2.0.0"
   :plugins          [[lein-cljsbuild "0.3.0"]]
-  :dependencies     [[contentjon/kit.cljs "0.1.0"]]
+  :dependencies     [[vupt/kit.core "0.1.0-SNAPSHOT"]]
   :profiles         {:dev {:dependencies [[org.clojure/clojure "1.5.1"]
                                           [mocha-latte "0.1.0"]]}}
   :cljsbuild
